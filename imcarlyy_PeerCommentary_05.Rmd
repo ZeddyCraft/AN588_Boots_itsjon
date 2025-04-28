@@ -12,6 +12,7 @@ library(tidyverse)
 
 **Bootstrapping Standard Errors and CIs for Linear Models**
 
+#Comment: This is not an issue because I can find the dataset on the github site, but overall for other projects where people might need your dataset, don't forget that uploading it as a .csv file that's been saved on your laptop, wouldn't allow others to access it.
 ```{r}
 # Load data
 data <- read.csv("C:/Users/Richard/Desktop/AN588 R Studio/KamilarAndCooperData.csv")
@@ -70,6 +71,9 @@ comparison <- data.frame(
 comparison
 ```
 
+#Comment: I think your code does great, but what I also did here was add a written response on the questions asked. I'm unsure if that is what Prof. Schmitt asked for, though. Maybe you could consider that? If not, I think it's also fine. At the end you ARE adding the comparison code which allows us to visualize it. 
+
+#(In case you want to add the written Q&A, I'll add the questions here: 1) How does the former compare to the SE estimated from your entire dataset using the formula for standard error implemented in lm()? 2) How does the latter compare to the 95% CI estimated from your entire dataset?). 
 **EXTRA CREDIT FUNCTION**
 
 ```{r}
@@ -158,3 +162,8 @@ bootplot_graph <- ggplot(boot_plot_data, aes(x = N)) +
   theme_minimal(base_size = 14)
 bootplot_graph
 ```
+
+
+#Comment: Besides what I mentioned earlier, I think you did a great job with your code! It has a lot of structure and is well-organized. I don't have anything else that I think you should change/improve. It's perfectly understandable, and very easy to follow. Great job Jon! 
+
+#Comment (PS): Don't forget to add the "5 challenges you faced" part that Prof. Schmitt asked us to put at the end of our homework.
